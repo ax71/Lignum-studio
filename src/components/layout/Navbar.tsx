@@ -1,30 +1,58 @@
-import Link from 'next/link';
+import Link from "next/link";
+import { DarkModeToggle } from "../common/DarkmodeToggle";
+import { Phone } from "lucide-react";
+import { Button } from "../ui/button";
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 w-full backdrop-blur-md bg-white/70 border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
-          <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className="text-2xl font-bold tracking-tighter text-stone-800">
+    <nav className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
+          {/* Logo Section */}
+          <div className="flex flex-shrink-0 items-center">
+            <Link
+              href="/"
+              className="text-2xl font-bold tracking-tighter text-foreground transition-opacity hover:opacity-80"
+            >
               KayuKita
             </Link>
           </div>
-          <div className="hidden sm:flex sm:space-x-8">
-            <Link href="/" className="text-stone-600 hover:text-amber-700 px-3 py-2 text-sm font-medium transition-colors">
+
+          {/* Navigation Links & Actions */}
+          <div className="hidden items-center space-x-4 sm:flex sm:space-x-8">
+            <Link
+              href="/"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+            >
               Home
             </Link>
-            <Link href="/products" className="text-stone-600 hover:text-amber-700 px-3 py-2 text-sm font-medium transition-colors">
+            <Link
+              href="/products"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+            >
               Katalog
             </Link>
-            <Link href="/about" className="text-stone-600 hover:text-amber-700 px-3 py-2 text-sm font-medium transition-colors">
+            <Link
+              href="/about"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+            >
               Tentang Kami
             </Link>
-            <Link href="/contact" className="text-stone-600 hover:text-amber-700 px-3 py-2 text-sm font-medium transition-colors">
-              Kontak
-            </Link>
+
+            <div className="flex items-center gap-3 border-l pl-6 ml-2">
+              <Button variant="outline" size="icon" asChild>
+                <Link
+                  href="https://wa.me/6281234567890"
+                  aria-label="Hubungi Kami"
+                >
+                  <Phone className="h-4 w-4 text-green-600 dark:text-green-400" />
+                </Link>
+              </Button>
+              <DarkModeToggle />
+            </div>
           </div>
-          {/* Mobile menu button could be added here later */}
+
+          {/* Mobile menu button (Bisa ditambahkan Sheet/Drawer di sini nanti) */}
         </div>
       </div>
     </nav>
