@@ -1,0 +1,89 @@
+[
+  {
+    "id": "1",
+    "name": "Piring Kayu Jati Premium",
+    "slug": "piring-kayu-jati-premium",
+    "price": 85000,
+    "shortDescription": "Piring makan kayu jati asli dengan finishing food grade.",
+    "fullDescription": "Hadirkan nuansa alami di meja makan Anda dengan Piring Kayu Jati Premium dari kami. Dibuat secara handmade oleh pengrajin lokal dari bahan kayu jati solid pilihan. Permukaannya di-finishing menggunakan bahan natural food grade sehingga aman untuk menyajikan berbagai jenis makanan (panas/dingin).",
+    "material": "Kayu Jati Solid",
+    "dimensions": "Diameter 25 cm, Tebal 2 cm",
+    "images": [
+      "/images/products/piring-1.jpg",
+      "/images/products/piring-2.jpg"
+    ],
+    "isFeatured": true
+  },
+  {
+    "id": "2",
+    "name": "Mangkuk Kayu Mahoni",
+    "slug": "mangkuk-kayu-mahoni",
+    "price": 65000,
+    "shortDescription": "Mangkuk aesthetic multifungsi untuk sereal atau salad.",
+    "fullDescription": "Mangkuk berbahan dasar kayu mahoni ini memiliki warna kemerahan alami yang elegan. Sangat cock digunakan untuk menyajikan sup, salad, sereal, atau sekadar sebagai pajangan estetik di dapur Anda. Permukaan halus tanpa serat kasar.",
+    "material": "Kayu Mahoni",
+    "dimensions": "Diameter 15 cm, Tinggi 7 cm",
+    "images": ["/images/products/mangkuk-1.jpg"],
+    "isFeatured": true
+  },
+  {
+    "id": "3",
+    "name": "Set Sendok Garpu Kayu Aren",
+    "slug": "set-sendok-garpu-kayu-aren",
+    "price": 35000,
+    "shortDescription": "Set alat makan ramah lingkungan dari kayu aren bintik unik.",
+    "fullDescription": "Satu set sendok dan garpu berbahan kayu aren pilihan dengan motif bintik khas alami. Desain ergonomis dan sangat ringan, sangat pas dibawa sebagai alat makan personal ke kantor atau di rumah.",
+    "material": "Kayu Aren",
+    "dimensions": "Panjang 18 cm",
+    "images": ["/images/products/set-sendok-1.jpg"],
+    "isFeatured": false
+  },
+  {
+    "id": "4",
+    "name": "Talenan Kayu Pinus Rustik",
+    "slug": "talenan-kayu-pinus-rustik",
+    "price": 120000,
+    "shortDescription": "Talenan tebal dengan gaya rustik untuk memotong dan menyajikan.",
+    "fullDescription": "Talenan besar dari kayu pinus dengan guratan serat yang cantik. Selain berfungsi optimal sebagai alas memotong bahan masakan, talenan ini juga dapat digunakan sebagai nampan saji (serving board) untuk keju, buah, atau daging steak.",
+    "material": "Kayu Pinus",
+    "dimensions": "Panjang 35 cm, Lebar 20 cm, Tebal 3 cm",
+    "images": ["/images/products/talenan-1.jpg"],
+    "isFeatured": true
+  },
+  {
+    "id": "4",
+    "name": "Talenan Kayu Pinus Rustik",
+    "slug": "talenan-kayu-pinus-rustik",
+    "price": 120000,
+    "shortDescription": "Talenan tebal dengan gaya rustik untuk memotong dan menyajikan.",
+    "fullDescription": "Talenan besar dari kayu pinus dengan guratan serat yang cantik. Selain berfungsi optimal sebagai alas memotong bahan masakan, talenan ini juga dapat digunakan sebagai nampan saji (serving board) untuk keju, buah, atau daging steak.",
+    "material": "Kayu Pinus",
+    "dimensions": "Panjang 35 cm, Lebar 20 cm, Tebal 3 cm",
+    "images": ["/images/products/talenan-1.jpg"],
+    "isFeatured": true
+  },
+  {
+    "id": "4",
+    "name": "Talenan Kayu Pinus Rustik",
+    "slug": "talenan-kayu-pinus-rustik",
+    "price": 120000,
+    "shortDescription": "Talenan tebal dengan gaya rustik untuk memotong dan menyajikan.",
+    "fullDescription": "Talenan besar dari kayu pinus dengan guratan serat yang cantik. Selain berfungsi optimal sebagai alas memotong bahan masakan, talenan ini juga dapat digunakan sebagai nampan saji (serving board) untuk keju, buah, atau daging steak.",
+    "material": "Kayu Pinus",
+    "dimensions": "Panjang 35 cm, Lebar 20 cm, Tebal 3 cm",
+    "images": ["/images/products/talenan-1.jpg"],
+    "isFeatured": true
+  },
+  {
+    "id": "4",
+    "name": "Talenan Kayu Pinus Rustik",
+    "slug": "talenan-kayu-pinus-rustik",
+    "price": 120000,
+    "shortDescription": "Talenan tebal dengan gaya rustik untuk memotong dan menyajikan.",
+    "fullDescription": "Talenan besar dari kayu pinus dengan guratan serat yang cantik. Selain berfungsi optimal sebagai alas memotong bahan masakan, talenan ini juga dapat digunakan sebagai nampan saji (serving board) untuk keju, buah, atau daging steak.",
+    "material": "Kayu Pinus",
+    "dimensions": "Panjang 35 cm, Lebar 20 cm, Tebal 3 cm",
+    "images": ["/images/products/talenan-1.jpg"],
+    "isFeatured": true
+  }
+]
