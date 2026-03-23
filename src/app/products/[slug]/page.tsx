@@ -3,6 +3,7 @@ import Image from "next/image";
 import productsData from "@/data/products.json";
 import { Product } from "@/types/product";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
+import Navbar from "@/components/layout/Navbar";
 
 // Fungsi format uang Rupiah
 const formatRupiah = (angka: number) => {
@@ -35,12 +36,13 @@ export default async function ProductDetail({
   }
 
   return (
-    <div className="bg-white min-h-screen py-12">
+    <div className="bg-background min-h-screen">
+      <div className="mb-10">
+        <Navbar />
+      </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16">
-          {/* Product Image Section */}
           <div className="flex flex-col-reverse lg:flex-row gap-4 mb-10 lg:mb-0">
-            {/* Image Gallery (thumbnails) - for now just displaying the first image duplicated if only one */}
             <div className="flex sm:flex-col gap-4 overflow-x-auto sm:overflow-visible">
               {product.images.map((img, idx) => (
                 <div
@@ -56,8 +58,7 @@ export default async function ProductDetail({
                 </div>
               ))}
             </div>
-            {/* Main Image */}
-            <div className="relative w-full aspect-w-1 aspect-h-1 sm:aspect-w-4 sm:aspect-h-5 rounded-2xl overflow-hidden bg-stone-100 flex-grow h-[400px] lg:h-[600px] shadow-sm">
+            <div className="relative w-full aspect-w-1 aspect-h-1 sm:aspect-w-4 sm:aspect-h-5 rounded-2xl overflow-hidden bg-muted flex-grow h-[400px] lg:h-[600px] shadow-sm">
               <Image
                 src={product.images[0]}
                 alt={product.name}
@@ -69,9 +70,8 @@ export default async function ProductDetail({
             </div>
           </div>
 
-          {/* Product Info Section */}
           <div className="mt-10 px-2 sm:px-0 lg:mt-0 lg:pt-8 flex flex-col">
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight mb-4">
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-foreground tracking-tight mb-4">
               {product.name}
             </h1>
             <div className="mb-6">
@@ -82,24 +82,28 @@ export default async function ProductDetail({
 
             <div className="mb-8">
               <h3 className="sr-only">Deskripsi</h3>
-              <p className="text-base text-stone-600 leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 {product.fullDescription}
               </p>
             </div>
 
-            <div className="border-t border-b border-stone-200 py-6 mb-8">
+            <div className="border-t border-b border-border py-6 mb-8">
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <h4 className="text-sm font-semibold text-stone-900 mb-1">
+                  <h4 className="text-sm font-semibold text-foreground mb-1">
                     Material
                   </h4>
-                  <p className="text-sm text-stone-600">{product.material}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {product.material}
+                  </p>
                 </div>
                 <div>
-                  <h4 className="text-sm font-semibold text-stone-900 mb-1">
+                  <h4 className="text-sm font-semibold text-foreground mb-1">
                     Dimensi
                   </h4>
-                  <p className="text-sm text-stone-600">{product.dimensions}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {product.dimensions}
+                  </p>
                 </div>
               </div>
             </div>
@@ -109,24 +113,6 @@ export default async function ProductDetail({
                 productName={product.name}
                 className="w-full sm:w-auto"
               />
-            </div>
-
-            <div className="mt-6 flex items-center text-sm text-stone-500">
-              <svg
-                className="w-5 h-5 mr-2 text-green-500"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              Stok selalu diperbarui. Pengiriman dari Jepara.
             </div>
           </div>
         </div>

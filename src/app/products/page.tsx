@@ -8,7 +8,7 @@ export default function ProductsPage() {
   const products = productsData as Product[];
 
   return (
-    <div className="bg-muted/30 min-h-screen">
+    <div className="bg-muted/30">
       <div className="mb-10">
         <Navbar />
       </div>

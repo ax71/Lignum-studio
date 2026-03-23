@@ -6,7 +6,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold text-foreground mb-4">KayuKita</h3>
+            <h3 className="text-xl font-bold text-foreground mb-4">
+              Lignum studio
+            </h3>
             <p className="text-sm text-muted-foreground">
               UMKM pengrajin kayu asli Indonesia. Menghadirkan produk
               berkualitas dari alam untuk mempercantik rumah Anda.
@@ -47,12 +49,12 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>📍 Lokasi yang pernah ada</li>
               <li>📞 +62 812 3456 7890</li>
-              <li>✉️ halo@kayukita.id</li>
+              <li>✉️ info@lignumstudio.id</li>
             </ul>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-border text-sm text-center text-muted-foreground">
-          &copy; {new Date().getFullYear()} KayuKita UMKM. Hak Cipta Dilindungi.
+          &copy; {new Date().getFullYear()} Lignum Studio. Hak Cipta Dilindungi.
         </div>
       </div>
     </footer>

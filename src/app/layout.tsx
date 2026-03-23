@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "KayuKita - Katalog UMKM Pengrajin Kayu",
+  title: "Lignum Studio - Katalog Pengrajin Kayu",
   description:
     "Menghadirkan produk kerajinan kayu berkualitas dari alam untuk mempercantik rumah Anda.",
 };

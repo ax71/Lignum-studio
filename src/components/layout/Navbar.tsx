@@ -8,17 +8,15 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          {/* Logo Section */}
           <div className="flex flex-shrink-0 items-center">
             <Link
               href="/"
               className="text-2xl font-bold tracking-tighter text-foreground transition-opacity hover:opacity-80"
             >
-              KayuKita
+              Lignum Studio
             </Link>
           </div>
 
-          {/* Navigation Links & Actions */}
           <div className="hidden items-center space-x-4 sm:flex sm:space-x-8">
             <Link
               href="/"
