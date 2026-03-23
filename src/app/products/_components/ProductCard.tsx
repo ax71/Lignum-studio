@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Product } from "@/types/product";
+import { Button } from "@/components/ui/button";
 
 const formatRupiah = (angka: number) => {
   return new Intl.NumberFormat("id-ID", {
@@ -36,12 +37,9 @@ export default function ProductCard({ product }: { product: Product }) {
         <p className="text-muted-foreground text-sm line-clamp-2 flex-grow mb-4">
           {product.shortDescription}
         </p>
-        <Link
-          href={`/products/${product.slug}`}
-          className="w-full text-center bg-secondary hover:bg-primary hover:text-primary-foreground text-secondary-foreground font-medium py-2 px-4 rounded-xl transition-colors duration-300"
-        >
-          Detail Produk
-        </Link>
+        <Button variant="secondary" size="lg">
+          <Link href={`/products/${product.slug}`}>Detail Produk</Link>
+        </Button>
       </div>
     </div>
   );

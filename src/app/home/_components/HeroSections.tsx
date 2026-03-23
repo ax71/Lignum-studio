@@ -109,12 +109,9 @@ export default function HeroSection() {
           </div>
 
           <div className="mt-16 text-center">
-            <Link
-              href="/products"
-              className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-4 px-10 rounded-xl shadow-md transition-colors"
-            >
-              Lihat Semua Produk
-            </Link>
+            <Button variant="secondary" size="lg" className="w-fit">
+              <Link href="/products">Lihat Semua Produk</Link>
+            </Button>
           </div>
         </div>
       </section>

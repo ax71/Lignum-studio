@@ -2,6 +2,7 @@ import Link from "next/link";
 import { DarkModeToggle } from "../common/DarkmodeToggle";
 import { Phone } from "lucide-react";
 import { Button } from "../ui/button";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
@@ -11,9 +12,15 @@ export default function Navbar() {
           <div className="flex flex-shrink-0 items-center">
             <Link
               href="/"
-              className="text-2xl font-bold tracking-tighter text-foreground transition-opacity hover:opacity-80"
+              className="text-xl font-bold tracking-tighter text-foreground transition-opacity hover:opacity-80"
             >
-              Lignum Studio
+              <Image
+                src="/logos/logos.webp"
+                alt="Logo"
+                width={50}
+                height={50}
+                className="mr-2"
+              />
             </Link>
           </div>
 
@@ -49,8 +56,6 @@ export default function Navbar() {
               <DarkModeToggle />
             </div>
           </div>
-
-          {/* Mobile menu button (Bisa ditambahkan Sheet/Drawer di sini nanti) */}
         </div>
       </div>
     </nav>
