@@ -53,7 +53,6 @@ export default function Navbar() {
                   <Phone className="h-4 w-4 text-green-600 dark:text-green-400" />
                 </Link>
               </Button>
-              <DarkModeToggle />
             </div>
           </div>
         </div>

@@ -4,11 +4,13 @@ import productsData from "@/data/products.json";
 import { Product } from "@/types/product";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import BrandStorySection from "./BrandStorySection";
+import ValuePropositionSection from "./ValuePropositionSection";
 
 export default function HeroSection() {
   const featuredProducts = (productsData as Product[])
     .filter((p) => p.isFeatured)
-    .slice(0, 3);
+    .slice(0, 4);
 
   return (
     <div>
@@ -38,47 +40,9 @@ export default function HeroSection() {
         </div>
       </section>
 
-      <section className="py-24 bg-muted/40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
-            <div className="mb-12 lg:mb-0 relative">
-              <div className="rounded-2xl overflow-hidden shadow-2xl bg-muted relative h-[400px]">
-                <Image
-                  src="/images/ourTeam.png"
-                  alt="Our Team"
-                  fill
-                  className="object-cover"
-                  priority
-                />
-              </div>
-            </div>
-
-            <div>
-              <h2 className="text-3xl font-extrabold text-foreground tracking-tight sm:text-4xl mb-6">
-                <span className="text-primary">Lignum Studio</span>
-              </h2>
-
-              <p className="text-lg text-muted-foreground mb-6 leading-relaxed line-clamp-2">
-                Lignum Studio berdedikasi dan berusaha untuk memberdayakan
-                pengrajin lokal sekaligus melestarikan kerajinan kayu
-                tradisional Indonesia. Semua produk dibuat melalui proses
-                handmade yang teliti, menggunakan bahan kayu solid legal
-                bersertifikat, premium, dan di-finishing dengan bahan food grade
-                alami sehingga aman untuk dikoleksi maupun dipajang.
-              </p>
-
-              <Link
-                href="/about"
-                className="text-primary font-semibold hover:text-primary/80 flex items-center group"
-              >
-                Baca Selengkapnya
-                <span className="ml-2 group-hover:translate-x-2 transition-transform">
-                  →
-                </span>
-              </Link>
-            </div>
-          </div>
-        </div>
+      <section className="py-24">
+        <ValuePropositionSection />
+        <BrandStorySection />
       </section>
 
       <section className="py-24 bg-background">
@@ -93,7 +57,7 @@ export default function HeroSection() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {featuredProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
