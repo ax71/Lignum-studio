@@ -1,6 +1,9 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function MyLocation() {
+  const t = useTranslations("location");
+
   const lokasi = {
     nama: "Lignum Studio",
     alamat: "Jalan raya : test Lokasi",
@@ -9,9 +12,18 @@ export default function MyLocation() {
     telepon: "+62 812 3456 7890",
     email: "hello@lignumstudio.com",
     jamBuka: [
-      { hari: "Senin - Jumat", jam: "09:00 - 18:00" },
-      { hari: "Sabtu", jam: "10:00 - 16:00" },
-      { hari: "Minggu", jam: "Tutup" },
+      {
+        hari: t("days.weekdays"),
+        jam: t("hours.weekdays"),
+      },
+      {
+        hari: t("days.saturday"),
+        jam: t("hours.saturday"),
+      },
+      {
+        hari: t("days.sunday"),
+        jam: t("days.closed"),
+      },
     ],
   };
 
@@ -22,7 +34,7 @@ export default function MyLocation() {
           <div>
             <h2 className="text-2xl font-bold mb-6 text-foreground flex items-center gap-3">
               <MapPin className="text-primary w-7 h-7" />
-              Workshop & Studio
+              {t("workshop_heading")}
             </h2>
             <p className="text-lg text-foreground font-semibold mb-2">
               {lokasi.nama}
@@ -51,7 +63,7 @@ export default function MyLocation() {
           <div>
             <h3 className="text-xl font-semibold mb-4 text-foreground flex items-center gap-3">
               <Clock className="text-primary w-6 h-6" />
-              Jam Operasional
+              {t("hours_heading")}
             </h3>
             <ul className="space-y-3 text-muted-foreground">
               {lokasi.jamBuka.map((jadwal, index) => (
@@ -64,11 +76,7 @@ export default function MyLocation() {
           </div>
 
           <div className="bg-muted p-6 rounded-xl border">
-            <p className="text-muted-foreground text-sm">
-              Ingin berkunjung? Kami sangat menyarankan untuk membuat janji temu
-              terlebih dahulu agar kami dapat memberikan pelayanan terbaik untuk
-              Anda.
-            </p>
+            <p className="text-muted-foreground text-sm">{t("visit_note")}</p>
           </div>
         </div>
 
@@ -83,7 +91,7 @@ export default function MyLocation() {
               allowFullScreen={true}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title={`Lokasi ${lokasi.nama} di Google Maps`}
+              title={t("map_title", { name: lokasi.nama })}
               className="absolute inset-0"
             ></iframe>
           </div>

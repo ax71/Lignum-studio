@@ -3,11 +3,15 @@ import ProductCard from "@/app/products/_components/ProductCard";
 import productsData from "@/data/products.json";
 import { Product } from "@/types/product";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import BrandStorySection from "./BrandStorySection";
 import ValuePropositionSection from "./ValuePropositionSection";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function HeroSection() {
+  const t = useTranslations("hero");
+  const tf = useTranslations("featuredProducts");
+  const locale = useLocale();
+
   const featuredProducts = (productsData as Product[])
     .filter((p) => p.isFeatured)
     .slice(0, 4);
@@ -17,12 +21,11 @@ export default function HeroSection() {
       <section className="relative bg-background min-h-[80vh] flex items-center">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 flex flex-col items-center text-center">
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-foreground text-balance">
-            Kerajinan Kayu <br className="hidden md:block" /> Premium & Estetik
+            {t("heading")}
           </h1>
 
           <p className="mt-4 text-xl text-muted-foreground max-w-2xl mb-10 text-balance">
-            Hadirkan nuansa alam ke dalam rumah anda dengan koleksi kerajinan
-            kayu berkualitas terbaik buatan pengrajin lokal Indonesia.
+            {t("subheading")}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -30,11 +33,11 @@ export default function HeroSection() {
               size="lg"
               className="w-full py-5 bg-primary text-primary-foreground hover:bg-primary/90"
             >
-              <Link href="/products">Lihat Katalog</Link>
+              <Link href={`/${locale}/products`}>{t("cta_catalog")}</Link>
             </Button>
 
             <Button size="lg" variant="secondary" className="w-full py-5">
-              <Link href="/about">Tentang Kami</Link>
+              <Link href={`/${locale}/about`}>{t("cta_about")}</Link>
             </Button>
           </div>
         </div>
@@ -49,11 +52,11 @@ export default function HeroSection() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-extrabold text-foreground tracking-tight sm:text-4xl mb-4">
-              Produk Kami
+              {tf("heading")}
             </h2>
 
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Koleksi best-seller kami yang paling digemari pelanggan.
+              {tf("subheading")}
             </p>
           </div>
 
@@ -65,7 +68,7 @@ export default function HeroSection() {
 
           <div className="mt-16 text-center">
             <Button variant="secondary" size="lg" className="w-fit">
-              <Link href="/products">Lihat Semua Produk</Link>
+              <Link href={`/${locale}/products`}>{tf("cta_all")}</Link>
             </Button>
           </div>
         </div>

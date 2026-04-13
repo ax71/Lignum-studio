@@ -1,8 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function BrandStorySection() {
+  const t = useTranslations("brandStory");
+  const locale = useLocale();
+
+  const headingLines = t("heading").split("\n");
+
   return (
     <section className="py-24 bg-muted/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -10,7 +16,7 @@ export default function BrandStorySection() {
           <div className="relative h-[550px] rounded-xl overflow-hidden shadow-xl">
             <Image
               src="/images/brand-story.png"
-              alt="Proses Kerajinan Kayu"
+              alt={t("imageAlt")}
               fill
               className="object-cover"
             />
@@ -18,30 +24,27 @@ export default function BrandStorySection() {
 
           <div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-6 leading-tight">
-              Dari Kayu Mentah <br />
-              Menjadi Karya Bernilai
+              {headingLines[0]}
+              {headingLines[1] && (
+                <>
+                  <br />
+                  {headingLines[1]}
+                </>
+              )}
             </h2>
 
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Di{" "}
-              <span className="text-primary font-semibold">Lignum Studio</span>,
-              setiap potongan kayu memiliki cerita. Kami percaya bahwa kayu
-              bukan sekadar bahan, tetapi bagian dari alam yang layak dihargai
-              dan diolah dengan penuh ketelitian.
+              <span className="text-primary font-semibold">Lignum Studio</span>,{" "}
+              {t("p1")}
             </p>
 
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Setiap produk dibuat secara handmade oleh pengrajin lokal
-              Indonesia yang berpengalaman. Dari proses pemilihan kayu,
-              pemotongan, hingga finishing—semuanya dilakukan dengan detail dan
-              dedikasi tinggi untuk menghasilkan karya yang tidak hanya indah,
-              tetapi juga tahan lama.
+              {t("p2")}
             </p>
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Kami juga berkomitmen menggunakan kayu legal bersertifikat dan
-              bahan finishing food grade yang aman, sehingga setiap produk tidak
-              hanya estetis tetapi juga ramah lingkungan dan aman digunakan.
+              {t("p3")}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -49,11 +52,11 @@ export default function BrandStorySection() {
                 size="lg"
                 className="bg-primary text-primary-foreground hover:bg-primary/90"
               >
-                <Link href="/products">Jelajahi Produk</Link>
+                <Link href={`/${locale}/products`}>{t("cta_products")}</Link>
               </Button>
 
               <Button size="lg" variant="secondary">
-                <Link href="/about">Cerita Lengkap Kami</Link>
+                <Link href={`/${locale}/about`}>{t("cta_about")}</Link>
               </Button>
             </div>
           </div>

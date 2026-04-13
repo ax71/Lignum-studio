@@ -6,30 +6,19 @@ import { Leaf, ShieldCheck, Sparkles, Users } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import MyLocation from "./MyLocation";
+import { useTranslations, useLocale } from "next-intl";
+
+const ICONS = [Leaf, ShieldCheck, Sparkles, Users];
 
 export default function AboutPage() {
-  const values = [
-    {
-      icon: Leaf,
-      title: "Ramah Lingkungan",
-      desc: "Kayu bersertifikat dan proses produksi berkelanjutan.",
-    },
-    {
-      icon: ShieldCheck,
-      title: "Kualitas Terjamin",
-      desc: "Finishing premium, halus, dan tahan lama.",
-    },
-    {
-      icon: Sparkles,
-      title: "100% Handmade",
-      desc: "Dibuat dengan detail tinggi oleh pengrajin berpengalaman.",
-    },
-    {
-      icon: Users,
-      title: "Dukung UMKM Lokal",
-      desc: "Membantu memberdayakan pengrajin lokal Indonesia.",
-    },
-  ];
+  const t = useTranslations("about");
+  const locale = useLocale();
+
+  const values = [0, 1, 2, 3].map((i) => ({
+    icon: ICONS[i],
+    title: t(`values.${i}.title`),
+    desc: t(`values.${i}.desc`),
+  }));
 
   return (
     <div className="bg-background min-h-screen">
@@ -50,28 +39,14 @@ export default function AboutPage() {
 
         <div className="prose prose-lg mx-auto text-muted-foreground">
           <h1 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-6">
-            Tentang Kami
+            {t("heading")}
           </h1>
-          <p className="mb-6 text-justify">
-            Lignum Studio berdedikasi dan berusaha untuk memberdayakan pengrajin
-            lokal sekaligus melestarikan kerajinan kayu tradisional Indonesia.
-            Semua produk dibuat melalui proses handmade yang teliti, menggunakan
-            bahan kayu solid legal bersertifikat, premium, dan di-finishing
-            dengan bahan food grade alami sehingga aman untuk dikoleksi maupun
-            dipajang.
-          </p>
+          <p className="mb-6 text-justify">{t("p1")}</p>
 
           <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4 mt-10">
-            Visi Kami
+            {t("vision_heading")}
           </h2>
-          <p className="mb-8 text-justify">
-            Lignum Studio berdedikasi dan berusaha untuk memberdayakan pengrajin
-            lokal sekaligus melestarikan kerajinan kayu tradisional Indonesia.
-            Semua produk dibuat melalui proses handmade yang teliti, menggunakan
-            bahan kayu solid legal bersertifikat, premium, dan di-finishing
-            dengan bahan food grade alami sehingga aman untuk dikoleksi maupun
-            dipajang.
-          </p>
+          <p className="mb-8 text-justify">{t("vision_p")}</p>
         </div>
       </div>
 
@@ -79,11 +54,10 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-4">
-              Kenapa Memilih Kami?
+              {t("why_heading")}
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Kami menghadirkan lebih dari sekadar produk. Setiap karya membawa
-              nilai, kualitas, dan cerita.
+              {t("why_subheading")}
             </p>
           </div>
 
@@ -110,23 +84,24 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
       <section>
         <BrandStorySection />
-        <MyLocation />
+        {/* <MyLocation /> */}
       </section>
 
       <div className="mt-20 text-center px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-6">
-          Temukan Produk Favoritmu
+          {t("cta_heading")}
         </h2>
         <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
-          Jelajahi koleksi kami dan rasakan kualitas handmade premium.
+          {t("cta_subheading")}
         </p>
         <Button
           size="lg"
           className="bg-primary text-primary-foreground hover:bg-primary/90"
         >
-          <Link href="/products">Belanja Sekarang</Link>
+          <Link href={`/${locale}/products`}>{t("cta_shop")}</Link>
         </Button>
       </div>
 

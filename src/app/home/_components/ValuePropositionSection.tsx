@@ -1,28 +1,17 @@
 import { Leaf, ShieldCheck, Sparkles, Users } from "lucide-react";
+import { useTranslations } from "next-intl";
+
+const ICONS = [Leaf, ShieldCheck, Sparkles, Users];
 
 export default function ValuePropositionSection() {
-  const values = [
-    {
-      icon: Leaf,
-      title: "Ramah Lingkungan",
-      desc: "Menggunakan kayu legal bersertifikat dan proses produksi yang berkelanjutan.",
-    },
-    {
-      icon: ShieldCheck,
-      title: "Kualitas Terjamin",
-      desc: "Setiap produk melewati proses finishing premium yang halus dan tahan lama.",
-    },
-    {
-      icon: Sparkles,
-      title: "100% Handmade",
-      desc: "Dibuat dengan detail tinggi oleh tangan pengrajin berpengalaman.",
-    },
-    {
-      icon: Users,
-      title: "Dukung UMKM Lokal",
-      desc: "Setiap pembelian membantu memberdayakan pengrajin lokal Indonesia.",
-    },
-  ];
+  const t = useTranslations("valueProposition");
+
+  // Typed access to the array of items from translation
+  const items = [0, 1, 2, 3].map((i) => ({
+    icon: ICONS[i],
+    title: t(`items.${i}.title`),
+    desc: t(`items.${i}.desc`),
+  }));
 
   return (
     <section className="py-20 bg-background border-y">
@@ -30,17 +19,16 @@ export default function ValuePropositionSection() {
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-4">
-            Kenapa Memilih Kami?
+            {t("heading")}
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Kami menghadirkan lebih dari sekadar produk — kami membawa nilai,
-            kualitas, dan cerita di setiap karya.
+            {t("subheading")}
           </p>
         </div>
 
         {/* Value Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {values.map((item, index) => {
+          {items.map((item, index) => {
             const Icon = item.icon;
 
             return (
