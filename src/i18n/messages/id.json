@@ -1,0 +1,110 @@
+{
+  "navbar": {
+    "home": "Home",
+    "catalog": "Katalog",
+    "about": "Tentang Kami",
+    "contact": "Hubungi Kami"
+  },
+  "hero": {
+    "heading": "Kerajinan Kayu Premium & Estetik",
+    "subheading": "Hadirkan nuansa alam ke dalam rumah anda dengan koleksi kerajinan kayu berkualitas terbaik buatan pengrajin lokal Indonesia.",
+    "cta_catalog": "Lihat Katalog",
+    "cta_about": "Tentang Kami"
+  },
+  "valueProposition": {
+    "heading": "Kenapa Memilih Kami?",
+    "subheading": "Kami menghadirkan lebih dari sekadar produk — kami membawa nilai, kualitas, dan cerita di setiap karya.",
+    "items": [
+      {
+        "title": "Ramah Lingkungan",
+        "desc": "Menggunakan kayu legal bersertifikat dan proses produksi yang berkelanjutan."
+      },
+      {
+        "title": "Kualitas Terjamin",
+        "desc": "Setiap produk melewati proses finishing premium yang halus dan tahan lama."
+      },
+      {
+        "title": "100% Handmade",
+        "desc": "Dibuat dengan detail tinggi oleh tangan pengrajin berpengalaman."
+      },
+      {
+        "title": "Dukung UMKM Lokal",
+        "desc": "Setiap pembelian membantu memberdayakan pengrajin lokal Indonesia."
+      }
+    ]
+  },
+  "brandStory": {
+    "imageAlt": "Proses Kerajinan Kayu",
+    "heading": "Dari Kayu Mentah\nMenjadi Karya Bernilai",
+    "p1": "Setiap potongan kayu memiliki cerita. Kami percaya bahwa kayu bukan sekadar bahan, tetapi bagian dari alam yang layak dihargai dan diolah dengan penuh ketelitian.",
+    "p2": "Setiap produk dibuat secara handmade oleh pengrajin lokal Indonesia yang berpengalaman. Dari proses pemilihan kayu, pemotongan, hingga finishing—semuanya dilakukan dengan detail dan dedikasi tinggi untuk menghasilkan karya yang tidak hanya indah, tetapi juga tahan lama.",
+    "p3": "Kami juga berkomitmen menggunakan kayu legal bersertifikat dan bahan finishing food grade yang aman, sehingga setiap produk tidak hanya estetis tetapi juga ramah lingkungan dan aman digunakan.",
+    "cta_products": "Jelajahi Produk",
+    "cta_about": "Cerita Lengkap Kami"
+  },
+  "featuredProducts": {
+    "heading": "Produk Kami",
+    "subheading": "Koleksi best-seller kami yang paling digemari pelanggan.",
+    "cta_all": "Lihat Semua Produk"
+  },
+  "products": {
+    "heading": "Katalog Produk",
+    "subheading": "Jelajahi berbagai pilihan peralatan dapur berbahan kayu yang aman, awet, dan cantik."
+  },
+  "about": {
+    "heading": "Tentang Kami",
+    "p1": "Lignum Studio berdedikasi dan berusaha untuk memberdayakan pengrajin lokal sekaligus melestarikan kerajinan kayu tradisional Indonesia. Semua produk dibuat melalui proses handmade yang teliti, menggunakan bahan kayu solid legal bersertifikat, premium, dan di-finishing dengan bahan food grade alami sehingga aman untuk dikoleksi maupun dipajang.",
+    "vision_heading": "Visi Kami",
+    "vision_p": "Lignum Studio berdedikasi dan berusaha untuk memberdayakan pengrajin lokal sekaligus melestarikan kerajinan kayu tradisional Indonesia. Semua produk dibuat melalui proses handmade yang teliti, menggunakan bahan kayu solid legal bersertifikat, premium, dan di-finishing dengan bahan food grade alami sehingga aman untuk dikoleksi maupun dipajang.",
+    "why_heading": "Kenapa Memilih Kami?",
+    "why_subheading": "Kami menghadirkan lebih dari sekadar produk. Setiap karya membawa nilai, kualitas, dan cerita.",
+    "values": [
+      {
+        "title": "Ramah Lingkungan",
+        "desc": "Kayu bersertifikat dan proses produksi berkelanjutan."
+      },
+      {
+        "title": "Kualitas Terjamin",
+        "desc": "Finishing premium, halus, dan tahan lama."
+      },
+      {
+        "title": "100% Handmade",
+        "desc": "Dibuat dengan detail tinggi oleh pengrajin berpengalaman."
+      },
+      {
+        "title": "Dukung UMKM Lokal",
+        "desc": "Membantu memberdayakan pengrajin lokal Indonesia."
+      }
+    ],
+    "cta_heading": "Temukan Produk Favoritmu",
+    "cta_subheading": "Jelajahi koleksi kami dan rasakan kualitas handmade premium.",
+    "cta_shop": "Belanja Sekarang"
+  },
+  "location": {
+    "workshop_heading": "Workshop & Studio",
+    "hours_heading": "Jam Operasional",
+    "visit_note": "Ingin berkunjung? Kami sangat menyarankan untuk membuat janji temu terlebih dahulu agar kami dapat memberikan pelayanan terbaik untuk Anda.",
+    "map_title": "Lokasi {name} di Google Maps",
+    "days": {
+      "weekdays": "Senin - Jumat",
+      "saturday": "Sabtu",
+      "sunday": "Minggu",
+      "closed": "Tutup"
+    },
+    "hours": {
+      "weekdays": "09:00 - 18:00",
+      "saturday": "10:00 - 16:00"
+    }
+  },
+  "footer": {
+    "tagline": "UMKM pengrajin kayu asli Indonesia. Menghadirkan produk berkualitas dari alam untuk mempercantik rumah Anda.",
+    "nav_heading": "Navigasi",
+    "contact_heading": "Kontak",
+    "nav": {
+      "home": "Home",
+      "products": "Katalog Produk",
+      "about": "Tentang Kami"
+    },
+    "copyright": "© {year} Lignum Studio. Hak Cipta Dilindungi."
+  }
+}

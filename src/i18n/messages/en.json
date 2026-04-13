@@ -1,0 +1,110 @@
+{
+  "navbar": {
+    "home": "Home",
+    "catalog": "Catalog",
+    "about": "About Us",
+    "contact": "Contact Us"
+  },
+  "hero": {
+    "heading": "Premium & Aesthetic Wood Craft",
+    "subheading": "Bring the essence of nature into your home with the finest quality wood craft collection by local Indonesian artisans.",
+    "cta_catalog": "View Catalog",
+    "cta_about": "About Us"
+  },
+  "valueProposition": {
+    "heading": "Why Choose Us?",
+    "subheading": "We offer more than just products — we bring value, quality, and a story into every piece.",
+    "items": [
+      {
+        "title": "Eco-Friendly",
+        "desc": "Using certified legal wood and sustainable production processes."
+      },
+      {
+        "title": "Guaranteed Quality",
+        "desc": "Every product goes through a premium finishing process that is smooth and long-lasting."
+      },
+      {
+        "title": "100% Handmade",
+        "desc": "Crafted with exceptional detail by the hands of experienced artisans."
+      },
+      {
+        "title": "Support Local SMEs",
+        "desc": "Every purchase helps empower local Indonesian craftsmen."
+      }
+    ]
+  },
+  "brandStory": {
+    "imageAlt": "Wood Crafting Process",
+    "heading": "From Raw Wood\nInto Works of Value",
+    "p1": "every piece of wood has a story. We believe that wood is not merely a material, but a part of nature that deserves to be cherished and crafted with full care and precision.",
+    "p2": "Every product is handmade by experienced local Indonesian artisans. From wood selection, cutting, to finishing — everything is done with great detail and dedication to produce pieces that are not only beautiful, but also durable.",
+    "p3": "We are also committed to using certified legal wood and food-grade finishing materials, so that every product is not only aesthetic but also eco-friendly and safe to use.",
+    "cta_products": "Explore Products",
+    "cta_about": "Our Full Story"
+  },
+  "featuredProducts": {
+    "heading": "Our Products",
+    "subheading": "Our best-selling collection most loved by customers.",
+    "cta_all": "View All Products"
+  },
+  "products": {
+    "heading": "Product Catalog",
+    "subheading": "Explore a wide range of wooden kitchen utensils that are safe, durable, and beautiful."
+  },
+  "about": {
+    "heading": "About Us",
+    "p1": "Lignum Studio is dedicated to empowering local craftsmen while preserving Indonesia's traditional wood craft heritage. All products are crafted through a meticulous handmade process, using certified premium solid wood, and finished with natural food-grade materials making them safe for collecting or displaying.",
+    "vision_heading": "Our Vision",
+    "vision_p": "Lignum Studio is dedicated to empowering local craftsmen while preserving Indonesia's traditional wood craft heritage. All products are crafted through a meticulous handmade process, using certified premium solid wood, and finished with natural food-grade materials making them safe for collecting or displaying.",
+    "why_heading": "Why Choose Us?",
+    "why_subheading": "We bring more than just products. Every piece carries value, quality, and a story.",
+    "values": [
+      {
+        "title": "Eco-Friendly",
+        "desc": "Certified wood and sustainable production processes."
+      },
+      {
+        "title": "Guaranteed Quality",
+        "desc": "Premium, smooth, and long-lasting finishing."
+      },
+      {
+        "title": "100% Handmade",
+        "desc": "Crafted with exceptional detail by experienced artisans."
+      },
+      {
+        "title": "Support Local SMEs",
+        "desc": "Helping empower local Indonesian craftsmen."
+      }
+    ],
+    "cta_heading": "Find Your Favourite Product",
+    "cta_subheading": "Explore our collection and experience premium handmade quality.",
+    "cta_shop": "Shop Now"
+  },
+  "location": {
+    "workshop_heading": "Workshop & Studio",
+    "hours_heading": "Business Hours",
+    "visit_note": "Planning a visit? We strongly recommend scheduling an appointment so we can give you our very best service.",
+    "map_title": "{name} Location on Google Maps",
+    "days": {
+      "weekdays": "Monday - Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "closed": ""
+    },
+    "hours": {
+      "weekdays": "",
+      "saturday": ""
+    }
+  },
+  "footer": {
+    "tagline": "An authentic Indonesian wood crafting SME. Bringing quality products from nature to beautify your home.",
+    "nav_heading": "Navigation",
+    "contact_heading": "Contact",
+    "nav": {
+      "home": "Home",
+      "products": "Product Catalog",
+      "about": "About Us"
+    },
+    "copyright": "© {year} Lignum Studio. All Rights Reserved."
+  }
+}
