@@ -1,13 +1,11 @@
-import ProductCard from "@/app/products/_components/ProductCard";
+import ProductCard from "@/components/common/ProductCard";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import productsData from "@/data/products.json";
 import { Product } from "@/types/product";
-import { useTranslations } from "next-intl";
 
-export default function LocaleProductsPage() {
+export default function ProductsPage() {
   const products = productsData as Product[];
-  const t = useTranslations("products");
 
   return (
     <div className="bg-muted/30">
@@ -17,10 +15,11 @@ export default function LocaleProductsPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl font-extrabold text-foreground tracking-tight sm:text-5xl mb-4">
-            {t("heading")}
+            Katalog Produk
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            {t("subheading")}
+            Jelajahi berbagai pilihan peralatan dapur berbahan kayu yang aman,
+            awet, dan cantik.
           </p>
         </div>
 

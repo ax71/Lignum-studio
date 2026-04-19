@@ -1,4 +1,4 @@
-import AboutPage from "@/app/about/_components/AboutPage";
+import AboutPage from "@/app/[locale]/about/_components/AboutPage";
 
 export default function LocaleAboutPage() {
   return <AboutPage />;
