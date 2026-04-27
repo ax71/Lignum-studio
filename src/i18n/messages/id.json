@@ -3,13 +3,52 @@
     "home": "Home",
     "catalog": "Katalog",
     "about": "Tentang Kami",
-    "contact": "Hubungi Kami"
+    "contact": "Hubungi Kami",
+    "shop": "BELANJA"
+  },
+  "common": {
+    "view_all": "Lihat Semua",
+    "details": "Detail",
+    "material": "Material",
+    "dimensions": "Dimensi",
+    "description": "Deskripsi",
+    "whatsapp_btn": "Pesan via WhatsApp"
   },
   "hero": {
     "heading": "Kerajinan Kayu Premium & Estetik",
     "subheading": "Hadirkan nuansa alam ke dalam rumah anda dengan koleksi kerajinan kayu berkualitas terbaik buatan pengrajin lokal Indonesia.",
     "cta_catalog": "Lihat Katalog",
     "cta_about": "Tentang Kami"
+  },
+  "home": {
+    "philosophy": {
+      "label": "Filosofi",
+      "heading": "Tanpa gangguan.\nTanpa kompromi.",
+      "stat_label": "Nilai Utama"
+    },
+    "collection": {
+      "label": "Koleksi",
+      "heading": "Temukan yang sesuai."
+    },
+    "bestsellers": {
+      "label": "Bestsellers",
+      "heading": "Paling dicari.",
+      "subheading": "Koleksi favorit pelanggan."
+    },
+    "process": {
+      "label": "Proses",
+      "heading": "Kami percaya pada\nsebuah proses.",
+      "steps": {
+        "design": "Desain",
+        "material": "Material",
+        "craft": "Craft"
+      }
+    },
+    "store": {
+      "label": "Toko",
+      "heading": "Kunjungi kami.",
+      "coming_soon": "Cabang lain segera hadir."
+    }
   },
   "valueProposition": {
     "heading": "Kenapa Memilih Kami?",
@@ -100,11 +139,21 @@
     "tagline": "UMKM pengrajin kayu asli Indonesia. Menghadirkan produk berkualitas dari alam untuk mempercantik rumah Anda.",
     "nav_heading": "Navigasi",
     "contact_heading": "Kontak",
+    "info_heading": "Info",
+    "shop_heading": "Shop",
     "nav": {
       "home": "Home",
       "products": "Katalog Produk",
-      "about": "Tentang Kami"
+      "about": "Tentang Kami",
+      "bestsellers": "Bestsellers",
+      "store_location": "Lokasi Toko",
+      "faq": "FAQ",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
     },
     "copyright": "© {year} Lignum Studio. Hak Cipta Dilindungi."
+  },
+  "whatsapp": {
+    "message": "Halo, saya tertarik dengan produk *{productName}* yang ada di katalog website. Apakah stoknya masih tersedia?"
   }
 }

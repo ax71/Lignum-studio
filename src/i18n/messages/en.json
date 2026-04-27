@@ -3,13 +3,52 @@
     "home": "Home",
     "catalog": "Catalog",
     "about": "About Us",
-    "contact": "Contact Us"
+    "contact": "Contact Us",
+    "shop": "SHOP"
+  },
+  "common": {
+    "view_all": "View All",
+    "details": "Details",
+    "material": "Material",
+    "dimensions": "Dimensions",
+    "description": "Description",
+    "whatsapp_btn": "Order via WhatsApp"
   },
   "hero": {
     "heading": "Premium & Aesthetic Wood Craft",
     "subheading": "Bring the essence of nature into your home with the finest quality wood craft collection by local Indonesian artisans.",
     "cta_catalog": "View Catalog",
     "cta_about": "About Us"
+  },
+  "home": {
+    "philosophy": {
+      "label": "Philosophy",
+      "heading": "No distractions.\nNo compromise.",
+      "stat_label": "Core Values"
+    },
+    "collection": {
+      "label": "Collection",
+      "heading": "Find your fit."
+    },
+    "bestsellers": {
+      "label": "Bestsellers",
+      "heading": "Most wanted.",
+      "subheading": "People favorite pieces."
+    },
+    "process": {
+      "label": "Process",
+      "heading": "We believe in\nthe process.",
+      "steps": {
+        "design": "Design",
+        "material": "Material",
+        "craft": "Craft"
+      }
+    },
+    "store": {
+      "label": "Store",
+      "heading": "Visit us.",
+      "coming_soon": "More branches coming soon."
+    }
   },
   "valueProposition": {
     "heading": "Why Choose Us?",
@@ -89,22 +128,32 @@
       "weekdays": "Monday - Friday",
       "saturday": "Saturday",
       "sunday": "Sunday",
-      "closed": ""
+      "closed": "Closed"
     },
     "hours": {
-      "weekdays": "",
-      "saturday": ""
+      "weekdays": "09:00 - 18:00",
+      "saturday": "10:00 - 16:00"
     }
   },
   "footer": {
     "tagline": "An authentic Indonesian wood crafting SME. Bringing quality products from nature to beautify your home.",
     "nav_heading": "Navigation",
     "contact_heading": "Contact",
+    "info_heading": "Info",
+    "shop_heading": "Shop",
     "nav": {
       "home": "Home",
       "products": "Product Catalog",
-      "about": "About Us"
+      "about": "About Us",
+      "bestsellers": "Bestsellers",
+      "store_location": "Store Location",
+      "faq": "FAQ",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
     },
     "copyright": "© {year} Lignum Studio. All Rights Reserved."
+  },
+  "whatsapp": {
+    "message": "Hello, I am interested in the *{productName}* product from your catalog. Is it still available?"
   }
 }
