@@ -21,9 +21,13 @@ export default function Navbar() {
               href={`/${locale}`}
               className="flex items-center transition-opacity hover:opacity-80"
             >
-              <span className="text-xl font-extrabold tracking-widest uppercase text-foreground">
-                LIGNUM
-              </span>
+              <Image
+                src="/logos/logos.webp"
+                alt="Logo"
+                className="w-20 h-20 object-contain"
+                width={100}
+                height={100}
+              />
             </Link>
           </div>
 
@@ -64,7 +68,11 @@ export default function Navbar() {
               onClick={() => setIsOpen(!isOpen)}
               className="text-foreground p-2 focus:outline-none"
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>

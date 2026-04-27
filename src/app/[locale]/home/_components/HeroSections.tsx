@@ -36,7 +36,7 @@ export default function HeroSection() {
       <section className="relative w-full h-[75vh] overflow-hidden">
         <div className="relative w-full aspect-[21/9] min-h-[60vh] md:min-h-[75vh] overflow-hidden bg-muted">
           <Image
-            src="https://images.unsplash.com/photo-1611486212557-88be5ff6f941?q=80&w=2070&auto=format&fit=crop"
+            src="/images/hero-image.webp"
             alt="Hero Craft"
             fill
             className="object-cover object-center"
@@ -296,13 +296,13 @@ export default function HeroSection() {
               <p className="text-[10px] uppercase tracking-widest text-white/50 mb-6">
                 Lignum Studio
               </p>
-              <p className="text-sm font-light text-white/80 leading-relaxed max-w-[180px]">
+              {/* <p className="text-sm font-light text-white/80 leading-relaxed max-w-[180px]">
                 Jl. Raya Canggu No. 123,
                 <br />
                 Kuta Utara, Badung,
                 <br />
                 Bali 80361
-              </p>
+              </p> */}
             </div>
             <div>
               <p className="text-[10px] text-white/50 mb-1">

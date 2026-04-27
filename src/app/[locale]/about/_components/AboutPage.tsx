@@ -13,9 +13,9 @@ export default function AboutPage() {
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 pt-20">
         <div className="flex justify-center mb-16">
-          <div className="w-80 h-80 rounded-3xl overflow-hidden border border-border bg-muted relative">
+          <div className="w-80 h-80 rounded-3xl overflow-hidden border border-border relative">
             <Image
-              src="/logos/bg-logo.webp"
+              src="/logos/logos.webp"
               alt="Our Team"
               fill
               className="object-cover"

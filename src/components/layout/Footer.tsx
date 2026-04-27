@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
+import Image from "next/image";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -10,9 +11,13 @@ export default function Footer() {
       <div className="max-w-[1400px] mx-auto px-6 sm:px-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-24">
           <div className="md:col-span-1">
-            <h3 className="text-xl font-extrabold tracking-widest uppercase mb-6">
-              LIGNUM
-            </h3>
+            <Image
+              src="/logos/logos.webp"
+              alt="Logo"
+              className="w-20 h-20 object-contain"
+              width={100}
+              height={100}
+            />
             <p className="text-sm font-light text-muted-foreground leading-relaxed max-w-xs">
               {t("tagline")}
             </p>
