@@ -3,23 +3,24 @@ import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import productsData from "@/data/products.json";
 import { Product } from "@/types/product";
+import { useTranslations } from "next-intl";
 
 export default function ProductsPage() {
   const products = productsData as Product[];
+  const t = useTranslations("products");
 
   return (
     <div className="bg-muted/30">
       <div className="mb-10">
         <Navbar />
       </div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
         <div className="text-center mb-16">
           <h1 className="text-4xl font-extrabold text-foreground tracking-tight sm:text-5xl mb-4">
-            Katalog Produk
+            {t("heading")}
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Jelajahi berbagai pilihan peralatan dapur berbahan kayu yang aman,
-            awet, dan cantik.
+            {t("subheading")}
           </p>
         </div>
 
