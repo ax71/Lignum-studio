@@ -1,8 +1,9 @@
 // Ganti dengan nomor WhatsApp UMKM Anda (tambahkan kode negara tanpa '+')
-const WA_NUMBER = "6285160657236";
+const WA_NUMBER = "6285190657236";
 
-export const generateWhatsAppURL = (productName: string) => {
-  const message = `Halo, saya tertarik dengan produk *${productName}* yang ada di katalog website. Apakah stoknya masih tersedia?`;
+export const generateWhatsAppURL = (productName: string, template: string) => {
+  // Ganti placeholder {productName} dengan nama produk yang sebenarnya
+  const message = template.replace("{productName}", productName);
 
   // Encode message agar aman digunakan dalam URL
   const encodedMessage = encodeURIComponent(message);
