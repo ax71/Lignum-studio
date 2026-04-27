@@ -2,25 +2,27 @@ import Image from "next/image";
 import Link from "next/link";
 import { Product } from "@/types/product";
 import { Button } from "@/components/ui/button";
-
-const formatRupiah = (angka: number) => {
-  return new Intl.NumberFormat("id-ID", {
-    style: "currency",
-    currency: "IDR",
-    minimumFractionDigits: 0,
-  }).format(angka);
-};
+import { formatCurrency } from "@/lib/utils";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function ProductCard({ product }: { product: Product }) {
+  const locale = useLocale() as "id" | "en";
+  const t = useTranslations("common");
+
+  // Helper to get localized field safely
+  const getLocalized = (field: any) => {
+    return typeof field === "string" ? field : field[locale] || field["id"];
+  };
+
   return (
     <div className="group flex flex-col bg-card rounded-2xl shadow-sm border border-border overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
       <Link
-        href={`/products/${product.slug}`}
+        href={`/${locale}/products/${product.slug}`}
         className="relative h-64 w-full overflow-hidden bg-muted"
       >
         <Image
           src={product.images[0]}
-          alt={product.name}
+          alt={getLocalized(product.name)}
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-500"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -29,16 +31,18 @@ export default function ProductCard({ product }: { product: Product }) {
       </Link>
       <div className="p-5 flex flex-col flex-grow">
         <h3 className="text-lg font-bold text-card-foreground mb-1">
-          {product.name}
+          {getLocalized(product.name)}
         </h3>
         <p className="text-primary font-semibold mb-3">
-          {formatRupiah(product.price)}
+          {formatCurrency(product.price, locale)}
         </p>
         <p className="text-muted-foreground text-sm line-clamp-2 flex-grow mb-4">
-          {product.shortDescription}
+          {getLocalized(product.shortDescription)}
         </p>
-        <Button variant="secondary" size="lg">
-          <Link href={`/products/${product.slug}`}>Detail Produk</Link>
+        <Button variant="secondary" size="lg" asChild>
+          <Link href={`/${locale}/products/${product.slug}`}>
+            {t("details")}
+          </Link>
         </Button>
       </div>
     </div>
