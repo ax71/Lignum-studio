@@ -1,6 +1,8 @@
+"use client";
+
 import Link from "next/link";
-import { Phone } from "lucide-react";
-import { Button } from "../ui/button";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import LanguageSwitcher from "../common/LanguageSwitcher";
@@ -8,60 +10,94 @@ import LanguageSwitcher from "../common/LanguageSwitcher";
 export default function Navbar() {
   const t = useTranslations("navbar");
   const locale = useLocale();
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md">
+    <nav className="fixed top-0 z-50 w-full bg-background/95 backdrop-blur-sm transition-all duration-300">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          <div className="flex flex-shrink-0 items-center">
+        <div className="flex h-20 items-center justify-between">
+          <div className="flex-shrink-0">
             <Link
               href={`/${locale}`}
-              className="text-xl font-bold tracking-tighter text-foreground transition-opacity hover:opacity-80"
+              className="flex items-center transition-opacity hover:opacity-80"
             >
-              <Image
-                src="/logos/logos.webp"
-                alt="Logo"
-                width={50}
-                height={50}
-                className="mr-2"
-              />
+              <span className="text-xl font-extrabold tracking-widest uppercase text-foreground">
+                LIGNUM
+              </span>
             </Link>
           </div>
 
-          <div className="hidden items-center space-x-4 sm:flex sm:space-x-8">
+          <div className="hidden items-center justify-center space-x-12 sm:flex flex-1">
             <Link
               href={`/${locale}`}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+              className="text-xs font-semibold tracking-widest uppercase text-muted-foreground transition-colors hover:text-foreground"
             >
               {t("home")}
             </Link>
             <Link
               href={`/${locale}/products`}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+              className="text-xs font-semibold tracking-widest uppercase text-muted-foreground transition-colors hover:text-foreground"
             >
               {t("catalog")}
             </Link>
             <Link
               href={`/${locale}/about`}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+              className="text-xs font-semibold tracking-widest uppercase text-muted-foreground transition-colors hover:text-foreground"
             >
               {t("about")}
             </Link>
+          </div>
 
-            <div className="flex items-center gap-3 border-l pl-6 ml-2">
-              <LanguageSwitcher />
-              <Button variant="outline" size="icon" asChild>
-                <Link
-                  href="https://wa.me/6281234567890"
-                  aria-label={t("contact")}
-                >
-                  <Phone className="h-4 w-4 text-green-600 dark:text-green-400" />
-                </Link>
-              </Button>
-            </div>
+          <div className="hidden sm:flex items-center gap-6">
+            <LanguageSwitcher />
+            <Link
+              href={`/${locale}/products`}
+              className="text-xs font-bold tracking-widest uppercase border border-foreground/20 px-6 py-2.5 hover:bg-foreground hover:text-background transition-all duration-300"
+            >
+              {t("shop")}
+            </Link>
+          </div>
+
+          <div className="flex sm:hidden items-center gap-4">
+            <LanguageSwitcher />
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-foreground p-2 focus:outline-none"
+            >
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
           </div>
         </div>
       </div>
+
+      {/* Mobile menu */}
+      {isOpen && (
+        <div className="sm:hidden absolute top-20 left-0 w-full bg-background shadow-lg border-b border-foreground/5">
+          <div className="flex flex-col space-y-6 px-6 pt-6 pb-8">
+            <Link
+              href={`/${locale}`}
+              onClick={() => setIsOpen(false)}
+              className="text-sm font-semibold tracking-widest uppercase text-foreground transition-colors"
+            >
+              {t("home")}
+            </Link>
+            <Link
+              href={`/${locale}/products`}
+              onClick={() => setIsOpen(false)}
+              className="text-sm font-semibold tracking-widest uppercase text-foreground transition-colors"
+            >
+              {t("catalog")}
+            </Link>
+            <Link
+              href={`/${locale}/about`}
+              onClick={() => setIsOpen(false)}
+              className="text-sm font-semibold tracking-widest uppercase text-foreground transition-colors"
+            >
+              {t("about")}
+            </Link>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
