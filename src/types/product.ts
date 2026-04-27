@@ -1,12 +1,17 @@
+export interface LocalizedField {
+  id: string;
+  en: string;
+}
+
 export interface Product {
   id: string;
-  name: string;
+  name: LocalizedField;
   slug: string;
   price: number;
-  shortDescription: string;
-  fullDescription: string;
-  material: string;
-  dimensions: string;
+  shortDescription: LocalizedField;
+  fullDescription: LocalizedField;
+  material: LocalizedField;
+  dimensions: LocalizedField;
   images: string[];
   isFeatured?: boolean;
 }

@@ -1,98 +1,164 @@
 [
   {
     "id": "1",
-    "name": "Piring Kayu Jati Premium",
-    "slug": "piring-kayu-jati-premium",
-    "price": 85000,
-    "shortDescription": "Piring makan kayu jati asli dengan finishing food grade.",
-    "fullDescription": "Hadirkan nuansa alami di meja makan Anda dengan Piring Kayu Jati Premium dari kami. Dibuat secara handmade oleh pengrajin lokal dari bahan kayu jati solid pilihan. Permukaannya di-finishing menggunakan bahan natural food grade sehingga aman untuk menyajikan berbagai jenis makanan (panas/dingin).",
-    "material": "Kayu Jati Solid",
-    "dimensions": "Diameter 25 cm, Tebal 2 cm",
+    "name": {
+      "id": "Piring Kayu Bentuk Tangan (Handcrafted)",
+      "en": "Hand-Shaped Wooden Plate (Handcrafted)"
+    },
+    "slug": "piring-kayu-bentuk-tangan",
+    "price": 120000,
+    "shortDescription": {
+      "id": "Piring kayu unik berbentuk tangan, handmade dari kayu solid dengan finishing food grade.",
+      "en": "Unique hand-shaped wooden plate, handmade from solid wood with food-grade finishing."
+    },
+    "fullDescription": {
+      "id": "Tambahkan sentuhan artistik dan natural pada meja makan Anda dengan Piring Kayu Bentuk Tangan. Dibuat secara handmade oleh pengrajin lokal menggunakan kayu solid berkualitas tinggi. Desainnya menyerupai telapak tangan memberikan kesan unik dan estetik, cocok untuk penyajian makanan ringan, dessert, atau sebagai elemen dekorasi.\n\nPermukaannya telah melalui proses finishing menggunakan bahan food grade yang aman untuk makanan, serta tetap mempertahankan tekstur alami kayu.",
+      "en": "Add an artistic and natural touch to your dining table with the Hand-Shaped Wooden Plate. Handcrafted by local artisans using high-quality solid wood. The design resembles a palm, giving a unique and aesthetic impression, suitable for serving snacks, desserts, or as a decorative element.\n\nThe surface has undergone a finishing process using food-grade materials that are safe for food, while still maintaining the natural texture of the wood."
+    },
+    "material": {
+      "id": "Kayu Solid Menggunakan Kayu Jati",
+      "en": "Solid Teak Wood"
+    },
+    "dimensions": {
+      "id": "± Panjang 20-25 cm, Lebar 15-18 cm, Tebal 2-3 cm",
+      "en": "± Length 20-25 cm, Width 15-18 cm, Thickness 2-3 cm"
+    },
     "images": ["/product/1.png"],
     "isFeatured": true
   },
   {
     "id": "2",
-    "name": "Mangkuk Kayu Mahoni",
-    "slug": "mangkuk-kayu-mahoni",
-    "price": 65000,
-    "shortDescription": "Mangkuk aesthetic multifungsi untuk sereal atau salad.",
-    "fullDescription": "Mangkuk berbahan dasar kayu mahoni ini memiliki warna kemerahan alami yang elegan. Sangat cock digunakan untuk menyajikan sup, salad, sereal, atau sekadar sebagai pajangan estetik di dapur Anda. Permukaan halus tanpa serat kasar.",
-    "material": "Kayu Mahoni",
-    "dimensions": "Diameter 15 cm, Tinggi 7 cm",
+    "name": {
+      "id": "Set Sendok & Garpu Kayu Handmade",
+      "en": "Handmade Wooden Spoon & Fork Set"
+    },
+    "slug": "set-sendok-garpu-kayu-handmade",
+    "price": 75000,
+    "shortDescription": {
+      "id": "Set sendok dan garpu kayu handmade dengan desain natural dan finishing food grade.",
+      "en": "Handmade wooden spoon and fork set with natural design and food-grade finishing."
+    },
+    "fullDescription": {
+      "id": "Nikmati pengalaman makan yang lebih alami dengan Set Sendok & Garpu Kayu Handmade. Dibuat secara manual oleh pengrajin lokal menggunakan kayu solid berkualitas, setiap set memiliki pola serat kayu yang unik dan tidak ada yang benar-benar sama.\n\nSet ini terdiri dari sendok dan garpu dengan desain ergonomis yang nyaman digunakan. Cocok untuk digunakan sehari-hari, piknik, atau sebagai pelengkap gaya hidup eco-friendly.\n\nPermukaan telah dihaluskan dan dilapisi finishing food grade sehingga aman untuk makanan dan tahan lama.",
+      "en": "Enjoy a more natural dining experience with the Handmade Wooden Spoon & Fork Set. Manually crafted by local artisans using high-quality solid wood, each set has a unique wood grain pattern and no two are exactly alike.\n\nThis set consists of a spoon and fork with an ergonomic design that is comfortable to use. Suitable for daily use, picnics, or as a complement to an eco-friendly lifestyle.\n\nThe surface has been smoothed and coated with a food-grade finish so it is safe for food and durable."
+    },
+    "material": {
+      "id": "Kayu Solid Olive wood",
+      "en": "Solid Olive Wood"
+    },
+    "dimensions": {
+      "id": "Panjang ± 20-25 cm",
+      "en": "Length ± 20-25 cm"
+    },
     "images": ["/product/2.png"],
     "isFeatured": true
   },
   {
     "id": "3",
-    "name": "Set Sendok Garpu Kayu Aren",
-    "slug": "set-sendok-garpu-kayu-aren",
-    "price": 35000,
-    "shortDescription": "Set alat makan ramah lingkungan dari kayu aren bintik unik.",
-    "fullDescription": "Satu set sendok dan garpu berbahan kayu aren pilihan dengan motif bintik khas alami. Desain ergonomis dan sangat ringan, sangat pas dibawa sebagai alat makan personal ke kantor atau di rumah.",
-    "material": "Kayu Aren",
-    "dimensions": "Panjang 18 cm",
+    "name": {
+      "id": "Set Mangkuk Kayu Handmade (3 Pcs)",
+      "en": "Handmade Wooden Bowl Set (3 Pcs)"
+    },
+    "slug": "set-mangkuk-kayu-handmade-3pcs",
+    "price": 95000,
+    "shortDescription": {
+      "id": "Set mangkuk kayu handmade isi 3 dengan ukuran berbeda, natural dan estetik.",
+      "en": "Handmade wooden bowl set of 3 with different sizes, natural and aesthetic."
+    },
+    "fullDescription": {
+      "id": "Lengkapi kebutuhan dapur Anda dengan Set Mangkuk Kayu Handmade isi 3 pcs yang didesain dengan ukuran berbeda untuk berbagai kebutuhan. Dibuat dari kayu solid berkualitas dengan finishing halus dan natural, setiap mangkuk memiliki serat kayu unik yang memberikan kesan hangat dan elegan.\n\nCocok digunakan untuk menyajikan sup, salad, snack, atau makanan lainnya. Selain fungsional, set ini juga sangat cocok sebagai elemen dekorasi dapur atau meja makan dengan konsep natural dan minimalis.\n\nTelah melalui proses finishing food grade sehingga aman digunakan untuk makanan.",
+      "en": "Complete your kitchen needs with the Handmade Wooden Bowl Set of 3 pcs designed in different sizes for various needs. Made from high-quality solid wood with a smooth and natural finish, each bowl has unique wood grain that provides a warm and elegant impression.\n\nSuitable for serving soup, salad, snacks, or other foods. Besides being functional, this set is also very suitable as a decorative element for the kitchen or dining table with a natural and minimalist concept.\n\nHas undergone a food-grade finishing process so it is safe to use for food."
+    },
+    "material": {
+      "id": "Kayu Solid (Mahoni / Jati / hardwood sejenis)",
+      "en": "Solid Wood (Mahogany / Teak / similar hardwood)"
+    },
+    "dimensions": {
+      "id": "Diameter ± 10 cm, 12 cm, 15 cm | Tinggi ± 5-7 cm",
+      "en": "Diameter ± 10 cm, 12 cm, 15 cm | Height ± 5-7 cm"
+    },
     "images": ["/product/3.png"],
     "isFeatured": false
   },
   {
     "id": "4",
-    "name": "Talenan Kayu Pinus Rustik",
-    "slug": "talenan-kayu-pinus-rustik",
+    "name": {
+      "id": "Set Cangkir Kayu Jati Premium",
+      "en": "Premium Teak Wood Cup Set"
+    },
+    "slug": "set-cangkir-kayu-jati-premium",
     "price": 120000,
-    "shortDescription": "Talenan tebal dengan gaya rustik untuk memotong dan menyajikan.",
-    "fullDescription": "Talenan besar dari kayu pinus dengan guratan serat yang cantik. Selain berfungsi optimal sebagai alas memotong bahan masakan, talenan ini juga dapat digunakan sebagai nampan saji (serving board) untuk keju, buah, atau daging steak.",
-    "material": "Kayu Pinus",
-    "dimensions": "Panjang 35 cm, Lebar 20 cm, Tebal 3 cm",
+    "shortDescription": {
+      "id": "Set cangkir, piring kecil, dan sendok kayu jati dengan finishing food grade yang elegan.",
+      "en": "Teak wood cup, saucer, and spoon set with elegant food-grade finishing."
+    },
+    "fullDescription": {
+      "id": "Nikmati sensasi minum kopi atau teh yang lebih alami dengan Set Cangkir Lignum Studio. Dibuat dari satu blok kayu jati solid tanpa sambungan, set ini menawarkan ketahanan tinggi dan estetika serat kayu yang menawan. Dilengkapi dengan piring kecil (saucer) dan sendok kayu yang serasi, sangat cocok untuk penggunaan harian maupun dekorasi meja makan.",
+      "en": "Enjoy the sensation of drinking coffee or tea more naturally with the Lignum Studio Cup Set. Made from a single block of solid teak wood without joints, this set offers high durability and charming wood grain aesthetics. Equipped with a small plate (saucer) and matching wooden spoon, it is very suitable for daily use as well as dining table decoration."
+    },
+    "material": {
+      "id": "Kayu Jati (Teak Wood)",
+      "en": "Teak Wood"
+    },
+    "dimensions": {
+      "id": "Cangkir: Diameter 8cm x Tinggi 9cm, Piring: Diameter 14cm, Sendok: Panjang 12cm",
+      "en": "Cup: Diameter 8cm x Height 9cm, Plate: Diameter 14cm, Spoon: Length 12cm"
+    },
     "images": ["/product/4.png"],
     "isFeatured": true
   },
   {
     "id": "5",
-    "name": "Talenan Kayu Pinus Rustik",
-    "slug": "talenan-kayu-pinus-rustik",
-    "price": 120000,
-    "shortDescription": "Talenan tebal dengan gaya rustik untuk memotong dan menyajikan.",
-    "fullDescription": "Talenan besar dari kayu pinus dengan guratan serat yang cantik. Selain berfungsi optimal sebagai alas memotong bahan masakan, talenan ini juga dapat digunakan sebagai nampan saji (serving board) untuk keju, buah, atau daging steak.",
-    "material": "Kayu Pinus",
-    "dimensions": "Panjang 35 cm, Lebar 20 cm, Tebal 3 cm",
+    "name": {
+      "id": "Mangkuk Kayu Resin Art Biru (Handcrafted)",
+      "en": "Blue Resin Art Wooden Bowl (Handcrafted)"
+    },
+    "slug": "mangkuk-kayu-resin-art-biru",
+    "price": 135000,
+    "shortDescription": {
+      "id": "Mangkuk kayu kombinasi resin biru dengan desain artistik dan finishing premium.",
+      "en": "Wooden bowl with blue resin combination featuring artistic design and premium finishing."
+    },
+    "fullDescription": {
+      "id": "Hadirkan sentuhan seni di meja Anda dengan Mangkuk Kayu Resin Art Biru. Produk ini merupakan perpaduan antara kayu solid alami dengan resin epoxy berwarna biru yang membentuk pola unik menyerupai gelombang atau kelopak bunga.\n\nSetiap mangkuk dibuat secara handmade sehingga memiliki karakter dan motif yang berbeda, menjadikannya tidak hanya sebagai alat saji, tetapi juga sebagai elemen dekorasi yang elegan.\n\nCocok digunakan untuk menyajikan snack, buah, atau sebagai centerpiece dekoratif. Permukaan telah dilapisi finishing food grade pada bagian kayu, serta resin berkualitas tinggi yang aman dan tahan lama.",
+      "en": "Bring a touch of art to your table with the Blue Resin Art Wooden Bowl. This product is a combination of natural solid wood with blue epoxy resin forming unique patterns resembling waves or flower petals.\n\nEach bowl is handcrafted so it has a different character and motif, making it not only a serving tool, but also an elegant decorative element.\n\nSuitable for serving snacks, fruit, or as a decorative centerpiece. The surface has been coated with food-grade finishing on the wood part, and high-quality resin that is safe and durable."
+    },
+    "material": {
+      "id": "Kayu Solid + Resin Epoxy",
+      "en": "Solid Wood + Epoxy Resin"
+    },
+    "dimensions": {
+      "id": "Diameter ± 15-20 cm, Tinggi ± 4-6 cm",
+      "en": "Diameter ± 15-20 cm, Height ± 4-6 cm"
+    },
     "images": ["/product/5.png"],
     "isFeatured": true
   },
   {
     "id": "6",
-    "name": "Talenan Kayu Pinus Rustik",
-    "slug": "talenan-kayu-pinus-rustik",
-    "price": 120000,
-    "shortDescription": "Talenan tebal dengan gaya rustik untuk memotong dan menyajikan.",
-    "fullDescription": "Talenan besar dari kayu pinus dengan guratan serat yang cantik. Selain berfungsi optimal sebagai alas memotong bahan masakan, talenan ini juga dapat digunakan sebagai nampan saji (serving board) untuk keju, buah, atau daging steak.",
-    "material": "Kayu Pinus",
-    "dimensions": "Panjang 35 cm, Lebar 20 cm, Tebal 3 cm",
+    "name": {
+      "id": "Wadah Bumbu Kayu Bulat dengan Tutup & Sendok",
+      "en": "Round Wooden Spice Jar with Lid & Spoon"
+    },
+    "slug": "wadah-bumbu-kayu-bulat-dengan-tutup",
+    "price": 80000,
+    "shortDescription": {
+      "id": "Wadah bumbu kayu dengan desain bulat unik, lengkap dengan tutup dan sendok kecil.",
+      "en": "Wooden spice jar with a unique round design, complete with a lid and a small spoon."
+    },
+    "fullDescription": {
+      "id": "Hadirkan kesan natural dan rapi di dapur Anda dengan Wadah Bumbu Kayu Bulat. Dibuat dari kayu solid berkualitas dengan motif serat alami yang unik, produk ini dilengkapi dengan tutup dan sendok kecil untuk memudahkan penggunaan sehari-hari.\n\nDesainnya yang compact dan estetik cocok digunakan untuk menyimpan gula, garam, lada, atau bumbu dapur lainnya. Selain fungsional, wadah ini juga mempercantik tampilan meja makan atau dapur dengan nuansa alami.\n\nFinishing menggunakan bahan food grade sehingga aman digunakan untuk menyimpan bahan makanan.",
+      "en": "Bring a natural and neat impression to your kitchen with the Round Wooden Spice Jar. Made from high-quality solid wood with a unique natural grain motif, this product comes with a lid and a small spoon for easy daily use.\n\nIts compact and aesthetic design is suitable for storing sugar, salt, pepper, or other kitchen spices. Besides being functional, this container also beautifies the appearance of your dining table or kitchen with a natural touch.\n\nFinishing uses food-grade materials so it is safe to use for storing food ingredients."
+    },
+    "material": {
+      "id": "Kayu Solid (Kelapa / Aren / hardwood sejenis)",
+      "en": "Solid Wood (Coconut / Palm / similar hardwood)"
+    },
+    "dimensions": {
+      "id": "Diameter ± 8-10 cm, Tinggi ± 8 cm",
+      "en": "Diameter ± 8-10 cm, Height ± 8 cm"
+    },
     "images": ["/product/6.png"],
-    "isFeatured": true
-  },
-  {
-    "id": "7",
-    "name": "Talenan Kayu Pinus Rustik",
-    "slug": "talenan-kayu-pinus-rustik",
-    "price": 120000,
-    "shortDescription": "Talenan tebal dengan gaya rustik untuk memotong dan menyajikan.",
-    "fullDescription": "Talenan besar dari kayu pinus dengan guratan serat yang cantik. Selain berfungsi optimal sebagai alas memotong bahan masakan, talenan ini juga dapat digunakan sebagai nampan saji (serving board) untuk keju, buah, atau daging steak.",
-    "material": "Kayu Pinus",
-    "dimensions": "Panjang 35 cm, Lebar 20 cm, Tebal 3 cm",
-    "images": ["/product/7.png"],
-    "isFeatured": true
-  },
-  {
-    "id": "8",
-    "name": "Talenan Kayu Pinus Rustik",
-    "slug": "talenan-kayu-pinus-rustik",
-    "price": 120000,
-    "shortDescription": "Talenan tebal dengan gaya rustik untuk memotong dan menyajikan.",
-    "fullDescription": "Talenan besar dari kayu pinus dengan guratan serat yang cantik. Selain berfungsi optimal sebagai alas memotong bahan masakan, talenan ini juga dapat digunakan sebagai nampan saji (serving board) untuk keju, buah, atau daging steak.",
-    "material": "Kayu Pinus",
-    "dimensions": "Panjang 35 cm, Lebar 20 cm, Tebal 3 cm",
-    "images": ["/product/1.png"],
     "isFeatured": true
   }
 ]
