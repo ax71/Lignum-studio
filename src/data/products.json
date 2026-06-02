@@ -2,26 +2,26 @@
   {
     "id": "1",
     "name": {
-      "id": "Piring Kayu Bentuk Tangan (Handcrafted)",
-      "en": "Hand-Shaped Wooden Plate (Handcrafted)"
+      "id": "Set Tempat Bumbu Kayu dengan Nampan",
+      "en": "Wooden Condiment Set with Tray"
     },
-    "slug": "piring-kayu-bentuk-tangan",
-    "price": 120000,
+    "slug": "set-tempat-bumbu-kayu",
+    "price": 150000,
     "shortDescription": {
-      "id": "Piring kayu unik berbentuk tangan, handmade dari kayu solid dengan finishing food grade.",
-      "en": "Unique hand-shaped wooden plate, handmade from solid wood with food-grade finishing."
+      "id": "Set tempat bumbu estetik dari kayu solid, lengkap dengan 2 mangkuk, tutup, sendok, dan nampan alas.",
+      "en": "Aesthetic solid wood condiment set, complete with 2 bowls, a lid, spoons, and a base tray."
     },
     "fullDescription": {
-      "id": "Tambahkan sentuhan artistik dan natural pada meja makan Anda dengan Piring Kayu Bentuk Tangan. Dibuat secara handmade oleh pengrajin lokal menggunakan kayu solid berkualitas tinggi. Desainnya menyerupai telapak tangan memberikan kesan unik dan estetik, cocok untuk penyajian makanan ringan, dessert, atau sebagai elemen dekorasi.\n\nPermukaannya telah melalui proses finishing menggunakan bahan food grade yang aman untuk makanan, serta tetap mempertahankan tekstur alami kayu.",
-      "en": "Add an artistic and natural touch to your dining table with the Hand-Shaped Wooden Plate. Handcrafted by local artisans using high-quality solid wood. The design resembles a palm, giving a unique and aesthetic impression, suitable for serving snacks, desserts, or as a decorative element.\n\nThe surface has undergone a finishing process using food-grade materials that are safe for food, while still maintaining the natural texture of the wood."
+      "id": "Lengkapi perlengkapan dapur dan meja makan Anda dengan Set Tempat Bumbu Kayu yang elegan ini. Dibuat secara teliti oleh pengrajin menggunakan kayu solid berkualitas yang menonjolkan pola serat kayu alami yang indah. Set ini terdiri dari dua mangkuk kecil (satu dilengkapi tutup pelindung), dua sendok kayu berukuran pas, dan sebuah nampan melengkung yang didesain khusus untuk menyatukan semuanya dengan rapi. Sangat cocok untuk menyajikan garam, lada, gula, sambal, atau bumbu lainnya dengan sentuhan gaya rustic dan natural.\n\nSetiap bagian telah dilapisi dengan finishing food grade, sehingga dijamin aman untuk bersentuhan langsung dengan bahan makanan sehari-hari serta mudah untuk dibersihkan.",
+      "en": "Complete your kitchen and dining table accessories with this elegant Wooden Condiment Set. Carefully handcrafted by artisans using high-quality solid wood that highlights beautiful natural wood grain patterns. This set consists of two small bowls (one equipped with a protective lid), two perfectly sized wooden spoons, and a curved tray specifically designed to keep everything neatly together. It is perfect for serving salt, pepper, sugar, chili sauce, or other condiments with a touch of rustic and natural style.\n\nEvery piece has been coated with a food-grade finish, guaranteeing it is safe for direct contact with everyday food ingredients and easy to clean."
     },
     "material": {
-      "id": "Kayu Solid Menggunakan Kayu Jati",
+      "id": "Kayu Solid (Kayu Jati)",
       "en": "Solid Teak Wood"
     },
     "dimensions": {
-      "id": "± Panjang 20-25 cm, Lebar 15-18 cm, Tebal 2-3 cm",
-      "en": "± Length 20-25 cm, Width 15-18 cm, Thickness 2-3 cm"
+      "id": " Mangkuk: Diameter 8 cm, Tinggi 6 cm",
+      "en": " Bowls: Diameter 8 cm, Height 6 cm"
     },
     "images": ["/product/1.png"],
     "isFeatured": true
